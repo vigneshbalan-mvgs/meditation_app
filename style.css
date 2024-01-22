@@ -97,9 +97,7 @@ button{
 button:hover{
   background: white;
   
-  color: black;
-}
-
+  color: black; }
 .button-inactive{
   pointer-events: none;
   background-color: #969696;

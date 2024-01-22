@@ -5,4 +5,9 @@ const instructions = document.querySelector('.instructions');
 const breathsText = document.querySelector('.breaths-text');
 let breathsLeft = 3;
 
+// Watching for selected breaths form user 
 
+numberOfBreaths.addEventListener('change', () => {
+  breathsLeft = numberOfBreaths.value;
+  breathsText.innerText = breathsLeft;
+})
