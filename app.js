@@ -52,12 +52,13 @@ const breathingApp = () => {
 start.addEventListener("click", () => {
   start.classList.add("button-inactive");
   instructions.innerText = "Get relaxed, and ready to begin breathing";
-  setTimeout(() => {
+  setTimeout(() => {// this time out will use to have a 2 sec for usee to show that
     instructions.innerText = "Breathing is about to begin...";
-    setTimeout(() => {
-      breathingApp();
-      growCircle();
-      breathTextUpdate();
+    setTimeout(() => {// this time out also used to show that 
+            breathingApp();// it make btn inactive and then other thing
+      growCircle();// define a circle grow and something like that
+      breathTextUpdate();// text level update 
     }, 2000);
   }, 2000);
 });
+// finesh the project
